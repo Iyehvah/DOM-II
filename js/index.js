@@ -1,15 +1,17 @@
-// Your code goes here
 
-// const  = document.querySelector('');
+const htmlColor = document.querySelector('body');
 
-// elCard.addEventListener('dblclick', (e) => {
-//     // put whatever we want to happen on the click
-//     // console.log(e);
-//     e.target.style.display = 'none';
-//   });
+htmlColor.addEventListener('click', (e) => {
+    e.target.style.backgroundColor = '#41B3A3';
+});
+
+const navBackgroundColor = document.querySelector('.main-navigation');
+
+navBackgroundColor.addEventListener('click', (e) => {
+    e.target.style.backgroundColor = '#41B3A3';
+});
 
 
-// a tags used 2  events mouseover and mouseleave
 const navStyle = document.querySelectorAll('.nav-link');
 
 
@@ -37,7 +39,7 @@ const backgroundNav = document.querySelector('.nav');
 
 backgroundNav.addEventListener('click', (e) => {
     e.target.style.backgroundColor = "red";
-})
+});
 
 
 
@@ -56,6 +58,52 @@ const headerImg = document.querySelector('header img');
 headerImg.addEventListener('dblclick', (e) => {
     e.target.style.border = "5px solid red";
 });
+
+
+const bodyImg = document.querySelectorAll('.img-content img');
+
+for (let i = 0; i < bodyImg.length; i++) {
+    bodyImg[i].addEventListener('mouseover', (e) =>{
+        e.target.style.borderRadius = "50%";
+    });
+}
+
+
+const allH2s = document.querySelectorAll('body h2');
+
+for (let i = 0; i < allH2s.length; i++) {
+    allH2s[i].addEventListener('dblclick', (e) => {
+        e.target.style.fontFamily = "Times New Roman";
+    });
+}
+
+const allH4s = document.querySelectorAll('body h4');
+
+for (let i = 0; i < allH4s.length; i++) {
+    allH4s[i].addEventListener('dblclick', (e) => {
+        e.target.style.fontFamily = "Times New Roman";
+    });
+}
+
+const buttons = document.querySelectorAll('.destination .btn');
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('mouseover', (e) => {
+        e.target.style.backgroundColor = "orange";
+    });
+}
+
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('mouseleave', (e) => {
+        e.target.style.backgroundColor = "#17A2B8";
+    });
+}
+
+
+
+
+
 
 
 
